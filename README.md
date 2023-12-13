@@ -44,7 +44,3 @@ NEURAL GOD is a tool designed for educational and research purposes. While it ai
 ## Contribution
 
 Contributions to NEURAL GOD are welcome. Feel free to submit bug reports, feature requests, or pull requests to improve the functionality and performance of the project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
