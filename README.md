@@ -26,16 +26,21 @@ git clone https://github.com/your-username/NEURAL-GOD.git
 cd NEURAL-GOD
 ```
 
+2. To train the NEURAL GOD model, you can use the following command:
 
-2. Obtain an OpenAI key and replace the placeholder in `final.py` with your key.
+```bash
+python run.py --output_dir=./saved_models --model_type=roberta --tokenizer_name=microsoft/codebert-base --model_name_or_path=microsoft/codebert-base --do_train --train_data_file=../dataset/train.jsonl --eval_data_file=../dataset/valid.jsonl --test_data_file=../dataset/test.jsonl --epoch 30 --block_size 400 --train_batch_size 1 --eval_batch_size 1 --learning_rate 2e-5 --max_grad_norm 1.0 --evaluate_during_training --seed 123456  2>&1 | tee train.log
+```
 
-3. Run the application:
+3. Obtain an OpenAI key and replace the placeholder in `final.py` with your key.
+
+4. Run the application:
 
 ```bash
 python -m streamlit run final.py
 ```
 
-4. Access the web interface at the provided URL and submit your C/C++ files for analysis.
+5. Access the web interface at the provided URL and submit your C/C++ files for analysis.
 
 ## Disclaimer
 
