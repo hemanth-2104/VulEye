@@ -1,0 +1,1 @@
+{"project": "", "commit_id": "", "target": -1, "func": "static bool block_is_active(void *opaque)\n\n{\n\n    return block_mig_state.blk_enable == 1;\n\n}\n\n", "idx": "-1"}

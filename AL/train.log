@@ -1,0 +1,14 @@
+11/09/2023 11:30:42 - WARNING - __main__ -   Process rank: -1, device: cuda, n_gpu: 1, distributed training: False, 16-bits training: False
+Some weights of RobertaForSequenceClassification were not initialized from the model checkpoint at microsoft/codebert-base and are newly initialized: ['classifier.dense.bias', 'classifier.out_proj.bias', 'classifier.dense.weight', 'classifier.out_proj.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+11/09/2023 11:30:45 - INFO - __main__ -   Training/evaluation parameters Namespace(train_data_file='./Models/train.jsonl', output_dir='./Models/model4', eval_data_file='./Files/valid.jsonl', test_data_file='./Files/test.jsonl', model_type='roberta', model_name_or_path='microsoft/codebert-base', mlm=False, mlm_probability=0.15, config_name='', tokenizer_name='microsoft/codebert-base', cache_dir='', block_size=400, do_train=False, do_eval=True, do_test=True, evaluate_during_training=True, do_lower_case=False, train_batch_size=1, eval_batch_size=1, gradient_accumulation_steps=1, learning_rate=2e-05, weight_decay=0.0, adam_epsilon=1e-08, max_grad_norm=1.0, num_train_epochs=1.0, max_steps=-1, warmup_steps=0, logging_steps=50, save_steps=50, save_total_limit=None, eval_all_checkpoints=False, no_cuda=False, overwrite_output_dir=False, overwrite_cache=False, seed=123456, epoch=1, fp16=False, fp16_opt_level='O1', local_rank=-1, server_ip='', server_port='', early_stopping_patience=None, min_loss_delta=0.001, dropout_probability=0, n_gpu=1, device=device(type='cuda'), per_gpu_train_batch_size=1, per_gpu_eval_batch_size=1, start_epoch=0, start_step=0)
+11/09/2023 11:30:47 - INFO - __main__ -   ***** Running evaluation *****
+11/09/2023 11:30:47 - INFO - __main__ -     Num examples = 547
+11/09/2023 11:30:47 - INFO - __main__ -     Batch size = 1
+11/09/2023 11:31:18 - INFO - __main__ -   ***** Eval results *****
+11/09/2023 11:31:18 - INFO - __main__ -     eval_acc = 0.6143
+11/09/2023 11:31:18 - INFO - __main__ -     eval_loss = 2.6406
+11/09/2023 11:31:18 - INFO - __main__ -   ***** Running Test *****
+11/09/2023 11:31:18 - INFO - __main__ -     Num examples = 1
+11/09/2023 11:31:18 - INFO - __main__ -     Batch size = 1
+  0%|          | 0/1 [00:00<?, ?it/s]100%|##########| 1/1 [00:00<00:00, 32.24it/s]
