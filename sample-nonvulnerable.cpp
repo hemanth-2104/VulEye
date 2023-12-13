@@ -5,7 +5,7 @@ static av_cold int vdadec_init(AVCodecContext *avctx)
     OSStatus status;
     int ret;
     ctx->h264_initialized = 0;
-    /* init pix_fmts of codec */ if (!ff_h264_vda_decoder.pix_fmts)
+     if (!ff_h264_vda_decoder.pix_fmts)
     {
         if (kCFCoreFoundationVersionNumber < kCFCoreFoundationVersionNumber10_7)
             ff_h264_vda_decoder.pix_fmts = vda_pixfmts_prior_10_7;
