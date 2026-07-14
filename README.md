@@ -3,7 +3,7 @@
 
 ## Overview
 
-NEURAL GOD is a machine learning project designed to identify and detect vulnerabilities in C/C++ code from various open-source projects, including FFMPEG, QEMU, Android, Linux, and more. The primary goal is to automatically identify vulnerabilities and, if detected, apply fixes or mitigations to enhance the security of the code.
+VulEye is a machine learning project designed to identify and detect vulnerabilities in C/C++ code from various open-source projects, including FFMPEG, QEMU, Android, Linux, and more. The primary goal is to automatically identify vulnerabilities and, if detected, apply fixes or mitigations to enhance the security of the code.
 
 ## Features
 
